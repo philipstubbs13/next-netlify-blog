@@ -37,7 +37,7 @@ const BlogPost = (props: IProps) => {
           <h1>{props.frontmatter.title}</h1>
           <p>By {props.frontmatter.author}</p>
           <div>
-            <ReactMarkdown source={props.markdownBody} />
+            <ReactMarkdown>{props.markdownBody}</ReactMarkdown>
           </div>
         </article>
         <div className="border-top">
