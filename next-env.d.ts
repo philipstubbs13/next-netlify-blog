@@ -1,5 +1,5 @@
-// eslint-disable-next-line prettier/prettier
 /// <reference types="next" />
-/// <reference types="next/types/global" />
-declare module 'prop-types';
-declare module 'react';
+/// <reference types="next/image-types/global" />
+
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/basic-features/typescript for more information.

@@ -10,7 +10,7 @@ export interface IProps {
 
 const Contribute = (props: IProps) => {
   return (
-    <Layout pageTitle={`${props.title} | Contribute`} description={props.description}>
+    <Layout pageTitle={`${props.title} | Contribute`}>
       <div className="container-md">
         <div className="row">
           <div className="col-12">

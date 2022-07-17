@@ -8,7 +8,7 @@ export interface IProps {
 
 const About = (props: IProps) => {
   return (
-    <Layout pageTitle={`${props.title} | About`} description={props.description}>
+    <Layout pageTitle={`${props.title} | About`}>
       <div className="container-md">
         <div className="row">
           <div className="col-12">
