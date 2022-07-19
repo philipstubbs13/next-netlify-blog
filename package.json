@@ -10,8 +10,7 @@
     "lint": "eslint --fix .",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "ts:watch": "tsc -w",
-    "ts": "tsc",
-    "prepare": "husky install"
+    "ts": "tsc"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
