@@ -6,7 +6,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 export interface IProps {
   handleChange: (event: any) => void;
   handleSubmit: (event: any) => void;
-  placeholder: any;
+  placeholder: string;
 }
 
 export const SearchFilter = (props: IProps) => {
