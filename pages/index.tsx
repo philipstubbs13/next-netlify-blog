@@ -6,6 +6,8 @@ import { Layout } from '@components/layout/Layout';
 import { PostList } from '@components/post-list/PostList';
 import { SearchFilter } from '@components/search-filter/SearchFilter';
 import { BLOG_TITLE } from '../constants';
+import { FeedbackCard } from '@components/feedback-card/FeedbackCard';
+import { PageTitle } from '@components/page-title/PageTitle';
 
 export interface IProps {
   description: String;
@@ -42,14 +44,7 @@ const Index = (props: IProps) => {
     <Layout pageTitle={props.title}>
       <div className="container-fluid">
         <div className="card">
-          <div className="row">
-            <div className="col-12">
-              <h1 className="title">{BLOG_TITLE}</h1>
-            </div>
-            <div className="col-12">
-              <p className="description">{props.description}</p>
-            </div>
-          </div>
+          <PageTitle title={BLOG_TITLE} description={props.description} />
         </div>
       </div>
       <main>
@@ -67,17 +62,7 @@ const Index = (props: IProps) => {
                   placeholder="Search posts by title or author"
                 />
               </div>
-              <div className="card">
-                <h2 className="card-title">Share Your Feedback</h2>
-                <p>Found a bug? Have a suggestion? Want to collab?</p>
-                <p>
-                  Send me an{' '}
-                  <a href="mailto:philipstubbs13@gmail.com" target="_blank" rel="noreferrer">
-                    email
-                  </a>
-                  , and I&apos;ll take a look.
-                </p>
-              </div>
+              <FeedbackCard />
             </div>
           </div>
         </div>

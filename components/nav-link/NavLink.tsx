@@ -1,10 +1,8 @@
-/* eslint-disable prettier/prettier */
-//@ts-nocheck
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 export interface IProps {
-  slug: String;
+  slug: string;
   title: String;
 }
 

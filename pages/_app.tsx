@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import '@components/search-filter/SearchFilter.css';
 import './contribute.css';
+import '../components/header/Header.css';
 
 export interface IProps {
   Component: any;

@@ -33,7 +33,6 @@ export const Layout = (props: IProps) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{props.pageTitle}</title>
-        <link href="/halfmoon-variables.min.css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/2000aec496.js" crossOrigin="anonymous"></script>
         <script defer src="/halfmoon.min.js"></script>
       </Head>

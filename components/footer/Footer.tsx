@@ -24,7 +24,7 @@ export const Footer = (props: IProps) => {
 
   return (
     <div className={containerClasses}>
-      <nav className="navbar navbar-fixed-bottom h-50">
+      <nav className="navbar navbar-fixed-bottom" style={{ height: 70 }}>
         <div className="navbar-content d-none d-md-block">
           <NavLink slug={PageRoutes.Home} title={PageTitles.Home} />
           <NavLink slug={PageRoutes.About} title={PageTitles.About} />
@@ -40,7 +40,7 @@ export const Footer = (props: IProps) => {
             aria-expanded="false">
             Connect With Me
           </button>
-          <div className="dropdown-menu d-flex">
+          <div className="dropdown-menu d-flex p-10">
             <SocialButton url={SocialLinks.Tiktok} icon={faTiktok} />
             <SocialButton url={SocialLinks.Twitter} icon={faTwitter} />
             <SocialButton url={SocialLinks.Linkedin} icon={faLinkedin} />

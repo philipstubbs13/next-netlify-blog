@@ -1,7 +1,7 @@
-/* eslint-disable prettier/prettier */
 import PropTypes from 'prop-types';
 import { Layout } from '../components/layout/Layout';
 import { HelpTopic } from '@components/help-topic/HelpTopic';
+import { PageTitle } from '@components/page-title/PageTitle';
 
 export interface IProps {
   description: String;
@@ -12,27 +12,21 @@ const Contribute = (props: IProps) => {
   return (
     <Layout pageTitle={`${props.title} | Contribute`}>
       <div className="container-md">
-        <div className="row">
-          <div className="col-12">
-            <h1 className="title">Contribute</h1>
-          </div>
-        </div>
+        <PageTitle title="Contribute" />
         <div className="row">
           <div className="col-12">
             <p>
               Do you have an idea for a post and want to contribute as a guest writer? That&apos;s
               awesome! Thanks for your contribution. The process for contributing is still being
-              worked out. In the future, I hope to have the contribution process much easier and
-              more straightforward than the current process. So, thank you for bearing with me at
-              the moment.
+              worked out. In the future, I hope to smooth out the contribution process and make it
+              more straightforward. So, thank you for bearing with me at the moment.
             </p>
             <p>
-              For now, here is some helpful information on how you can begin contributing quickly.
-              If you have any questions, are confused, or are having trouble with getting started,
-              don&apos;t hesistate to reach out, and I will do my best to help and/or clarify.
-              Thanks again!
+              For now, here is some helpful information on how you can begin contributing. If you
+              have any questions or are having trouble with getting started, don&apos;t hesistate to
+              reach out. Thanks again!
             </p>
-            <ul>
+            <ol>
               <li>
                 <a href="#download-code">Download the source code for this website</a>
               </li>
@@ -45,18 +39,16 @@ const Contribute = (props: IProps) => {
               <li>
                 <a href="#submit-review">Submit for review</a>
               </li>
-            </ul>
+            </ol>
 
             <HelpTopic
               anchorTag="download-code"
-              topicTitle="Download the source code for this website.">
+              topicTitle="1. Download the source code for this website.">
               <p>
                 To be able to contribute as a writer or developer of this site, you will need to
-                download the source code for the site to a local directory on your computer.
-              </p>
-              <p>
-                The source code and posts for this website are open source. You can find the
-                repository on{' '}
+                download the source code for the site to a local directory on your computer. The
+                source code and posts for this website are open source. You can find the repository
+                on{' '}
                 <a
                   href="https://github.com/philipstubbs13/next-netlify-blog"
                   target="_blank"
@@ -89,7 +81,7 @@ const Contribute = (props: IProps) => {
               </ol>
             </HelpTopic>
 
-            <HelpTopic anchorTag="create-post" topicTitle="Create a post">
+            <HelpTopic anchorTag="create-post" topicTitle="2. Create a post">
               <p>Perform the following steps to create a post.</p>
               <ol>
                 <li>
@@ -98,7 +90,7 @@ const Contribute = (props: IProps) => {
                   <code className="code">posts</code> directory.
                   <p>
                     The name of the file should be similar to the title of your blog post where each
-                    word is hyphenated with one another.
+                    word is hyphenated (also known as snake case).
                   </p>
                   <p>
                     There should be no spaces in the filename and should be all lowercase. For
@@ -115,7 +107,7 @@ const Contribute = (props: IProps) => {
                   </p>
                 </li>
                 <li>
-                  Inside the newly created <code className="code">.md</code> file , copy and paste
+                  Inside the <code className="code">.md</code> fil you just created, copy and paste
                   the starter code from{' '}
                   <code className="code">next-netlify-blog/example-post/example-post.md</code> into
                   your new file.
@@ -125,8 +117,7 @@ const Contribute = (props: IProps) => {
                   </p>
                   <p>
                     Note that posts for this site are written in Markdown syntax. If you are
-                    unfamiliar with Markdown, it is pretty straightforward to get up to speed with.
-                    For additional help, refer to this{' '}
+                    unfamiliar with Markdown, refer to this guide for more information:{' '}
                     <a
                       href="https://guides.github.com/features/mastering-markdown/"
                       target="_blank"
@@ -139,7 +130,7 @@ const Contribute = (props: IProps) => {
               </ol>
             </HelpTopic>
 
-            <HelpTopic anchorTag="preview-post" topicTitle="Preview a post">
+            <HelpTopic anchorTag="preview-post" topicTitle="3. Preview a post">
               <p>
                 After you have created a post, it is a good idea and highly recommended to preview
                 your post to make sure everything looks good before it goes live on the site.
@@ -186,7 +177,7 @@ const Contribute = (props: IProps) => {
               </ol>
             </HelpTopic>
 
-            <HelpTopic anchorTag="submit-review" topicTitle="Submit for review">
+            <HelpTopic anchorTag="submit-review" topicTitle="4. Submit for review">
               <p>
                 After you have created a post, previewed it, and you are satisfied with it, follow
                 these steps to get your changes published:

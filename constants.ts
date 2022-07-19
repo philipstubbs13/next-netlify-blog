@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable prettier/prettier */
-export const BLOG_TITLE = 'mn sports with phil';
+export const BLOG_TITLE = 'the mind of phil';
 
 export enum PageTitles {
   About = 'About',
@@ -20,5 +19,5 @@ export enum SocialLinks {
   Instagram = 'https://www.instagram.com/philipstubbs13',
   Linkedin = 'https://www.linkedin.com/in/philipjstubbs/',
   Twitter = 'https://twitter.com/iamPhilStubbs',
-  Tiktok = 'https://www.tiktok.com/@philtalksmnsports',
+  Tiktok = 'https://www.tiktok.com/@thephilstubbs',
 }
